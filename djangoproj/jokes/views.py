@@ -15,7 +15,7 @@ class JokeCreteView(CreateView):
 
 class JokeDeleteView(DeleteView):
     model = Joke
-    success_url = reverse_lazy('jokes:detail')
+    success_url = reverse_lazy('jokes:list')
 
 
 class JokeDetailView(DetailView):

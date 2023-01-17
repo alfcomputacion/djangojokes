@@ -21,6 +21,9 @@ class Category(models.Model):
             self.slug = unique_slug(value, type(self))
         super().save(*args, **kwargs)
 
+    class Meta:
+        verbose_name_plural = 'Categories'
+
 
 class Joke(models.Model):
     question = models.CharField(max_length=50)
