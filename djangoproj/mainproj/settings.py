@@ -42,8 +42,9 @@ INSTALLED_APPS = [
 
     # Third party
     'allauth',
-    'allauth.account'
-    'allauth.socialaccount'
+    'allauth.account',
+    'allauth.socialaccount',
+
     # MY APPS
     'jobs.apps.JobsConfig',
     'pages.apps.PagesConfig',
