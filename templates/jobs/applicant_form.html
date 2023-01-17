@@ -1,0 +1,16 @@
+{% extends "_base.html" %}
+
+{% load crispy_forms_tags %}
+{% block tittle %}Job Application{% endblock %}/title>
+
+{% block main %}
+<h2 class="text-center">Joke Writer Application</h2>
+<div class="card border-primary m-auto mb-3 p-3"
+    style="max-width: 30rem;">
+    <form method="post">
+        {% csrf_token %}
+        {{ form|crispy }}
+        <button class="btn btn-success float-right">Apply</button>
+    </form>
+</div>
+{% endblock %}
