@@ -1,6 +1,8 @@
 from django.contrib.auth import get_user_model
+from django.urls import reverse_lazy
 from django.views.generic import UpdateView
 
+from allauth.account.views import PasswordChangeView
 # Create your views here.
 from .forms import CustomUserChangeForm
 
@@ -12,3 +14,7 @@ class MyAccountPageView(UpdateView):
 
     def get_object(self):
         return self.request.user
+
+
+class CustomPasswordChangeView(PasswordChangeView):
+    success_url = reverse_lazy('my-account')
