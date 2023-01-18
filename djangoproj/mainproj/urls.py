@@ -23,5 +23,6 @@ urlpatterns = [
     path('joke/', include('jokes.urls')),
 
     # User Authentication
+    path('account/', include('users.urls')),
     path('account/', include('allauth.urls')),
 ]
