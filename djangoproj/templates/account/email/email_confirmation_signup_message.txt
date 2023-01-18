@@ -1,0 +1,8 @@
+Hello!
+
+You have received this email because you registered for 
+{{ current_site.name }} using this email address.
+
+To confirm this is correct, go to {{ activate_url }}
+
+Thank your!
